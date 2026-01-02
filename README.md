@@ -12,6 +12,14 @@ and recovers slowly during normal operation.
 The agent operates in a continuous loop:
 Observe → Reason → Act
 
+## System Flow Diagram
+
+![Trust Decay Agent Flow Diagram](flow-diagram.png)
+
+The diagram illustrates the continuous Observe → Reason → Act loop
+running autonomously at the edge. Responses escalate automatically
+as trust decays.
+
 - Observe: Collect lightweight behavioural signals
 - Reason: Apply trust decay logic based on anomalies
 - Act: Trigger graduated autonomous responses
